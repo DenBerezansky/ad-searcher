@@ -9,16 +9,18 @@ public class Ad
     private String url;
     private String name;
     private String phoneNumber;
+    private String price;
     
     public Ad()
     {
     }
     
-    public Ad(String url, String name, String phoneNumber)
+    public Ad(String url, String name, String phoneNumber,String price)
     {
         this.url = url;
         this.name = name;
         this.phoneNumber = phoneNumber;
+        this.price = price;
     }
     
     public long getId()
@@ -61,4 +63,13 @@ public class Ad
         this.phoneNumber = phoneNumber;
     }
     
+    public String getPrice()
+    {
+        return price;
+    }
+    
+    public void setPrice(String price)
+    {
+        this.price = price;
+    }
 }
